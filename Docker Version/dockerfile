@@ -1,0 +1,10 @@
+FROM python:3.9
+RUN pip install flask dnslib
+RUN apt-get update
+RUN yes | apt-get install dnsutils
+
+COPY server.py /app/
+COPY AdsBestKnownDomains.txt /app/
+
+ENV PYTHONPATH /app
+CMD ["python", "/app/server.py"]
