@@ -1,7 +1,7 @@
 # CustomAdBlocker
 Custom DNS Ad Blocker
 
-## Instructions
+## Instructions & Docs
 
 In order to get this app fully functional you need to set a custom DNS to your home network.
 The IP will be 127.0.0.1
